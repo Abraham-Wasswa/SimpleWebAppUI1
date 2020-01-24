@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container-fluid py-3">
+
+    <div class="row mx-md-n5">
+
+        <div class="col-md-6 px-md-5 d-none d-sm-block align-self-center text-center" id="app">
+            <p class="font-weight-dark font-italic align-self-center" style="font-size: 20px">
+                Chuck Noris Jokes
+            </p>
+        </div>
+
+        <div class="col-md-6 px-md-5 py-5 d-none d-sm-block align-self-center text-center" style="font-size: 20px" id="me">
+            <div class="row">
+                <div class="form-group form-row">
+                    <div class="col-md-4 p-3 align-self-center">
+                        <label for="Category" class="col-form-label font-weight-dark font-italic">Category: </label>
+                    </div>
+                    <div class="col-md-8 p-4 align-self-center">
+                        <select v-model="myModel" class="custom-select py-3">
+                            <option v-for="myOption in myOptions" :value="myOption">{{ myOption.Category }}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+@section scripts{
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="~/js/main.js"></script>
+}
