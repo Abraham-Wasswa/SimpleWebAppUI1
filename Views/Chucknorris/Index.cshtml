@@ -1,6 +1,9 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@{
+    ViewData["Title"] = "Chuck Norris";
 }
+
+@model SimpleWebApp.Models.ChuckNorisJokes
 
 
 <div class="container-fluid py-3">
@@ -12,6 +15,7 @@
                 <h1>Chuck Noris Jokes</h1>
             </p>
         </div>
+
 
         <div class="col-md-6 px-md-5 py-5 d-none d-sm-block align-self-center text-center" style="font-size: 20px" id="me">
             <div class="row">
@@ -28,6 +32,7 @@
             </div>
         </div>
 
+        <button class="bg-primary" v-on: click ="">Jokes</button>
     </div>
 
 </div>

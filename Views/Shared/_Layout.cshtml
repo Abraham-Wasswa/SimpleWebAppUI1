@@ -19,13 +19,25 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Chucknorris" asp-action="Index">Logic</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>           
         </nav>
 
         <!--Card for project start-->
-        <div class="card text-center align-self-center bg-light" style="height: 300px;">            
+        <div class="card text-center d-sm-block align-self-center text-center bg-light" style="height: 300px;">
             <div class="card-body">
-                <h5 class="card-title">Chuck Norris</h5>                
+                <p class="font-weight-dark font-italic align-self-center" style="font-size: 20px">
+                    <h5 class="card-title">
+                        Chuck Norris
+                    </h5>
+                </p>
             </div>
         </div>
 
